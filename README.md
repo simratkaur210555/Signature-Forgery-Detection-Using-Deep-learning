@@ -104,9 +104,9 @@ The model is trained using **Contrastive Loss**, which encourages similar signat
 
 The loss function implemented in the project is:
 
-\[
-L = yD^2 + (1-y)\max(m-D,0)^2
-\]
+$$
+L = y \cdot D^{2} + (1-y) \cdot \max(m-D,0)^{2}
+$$
 
 Where:
 
