@@ -720,15 +720,15 @@ if verify:
                 f"below the threshold of <strong>{threshold:.6f}</strong>. "
                 "The closer two signatures sit in the embedding space, "
                 "the more alike the model considers their stroke "
-                "structure, proportion, and pressure pattern to be."
+                "structure, proportion to be."
             )
         else:
             explanation = (
                 f"The distance of <strong>{distance:.6f}</strong> exceeds "
                 f"the threshold of <strong>{threshold:.6f}</strong>. "
                 "A wider gap in the embedding space indicates the model "
-                "found meaningfully different stroke structure, "
-                "proportion, or pressure pattern between the two exhibits."
+                "found meaningfully different visual stroke patterns and proportions
+                between the two exhibits."
             )
 
         st.markdown(
