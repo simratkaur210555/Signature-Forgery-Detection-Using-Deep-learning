@@ -45,7 +45,11 @@ def load_metrics():
 
 
 metrics = load_metrics()
-THRESHOLD = metrics.get("optimal_threshold", 0.209426)
+if "optimal_threshold" not in metrics:
+    st.error("Evaluation results not found. Please run model evaluation first.")
+    st.stop()
+
+THRESHOLD = float(metrics["optimal_threshold"])
 
 
 # ============================================================
